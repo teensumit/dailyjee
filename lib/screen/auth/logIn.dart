@@ -27,21 +27,24 @@ class LogIn extends StatelessWidget {
             SizedBox(height:49),
             TextInputContainer(
               st: 'Email',
-              icon: Icon(Icons.done, color: Colors.green),
+              icon: Icon(Icons.check_circle, size: 18, color: Colors.green),
               typer:TextInputType.emailAddress
             ),
             SizedBox(height:32),
             TextInputContainer(
               st: 'Password',
-              icon: Icon(Icons.visibility),
+              icon: Icon(Icons.visibility, size: 18,),
               typer:TextInputType.visiblePassword
             ),
             SizedBox(height:24),
             Row(
               children: [
                 Icon(
-                  Icons.done
+                  Icons.check_circle,
+                  size: 14,
+                  color: primary,
                 ),
+                SizedBox(width:8),
                 Expanded(
                     child: Text(
                     'Remember me',

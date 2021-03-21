@@ -5,7 +5,7 @@ class TextInputContainer extends StatelessWidget {
     Key key,
     @required this.typer,
     @required this.st,
-    @required this.icon,
+    this.icon,
   }) : super(key: key);
 
   final TextInputType typer;

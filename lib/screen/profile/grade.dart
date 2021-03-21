@@ -30,6 +30,42 @@ class Grade extends StatelessWidget {
           ),
         )
       ),
+      bottomNavigationBar: SizedBox(
+        height: 48,
+        child: BottomNavigationBar(
+          showUnselectedLabels: true,
+          unselectedItemColor: unselectedColor,
+          selectedItemColor: primary,
+          selectedLabelStyle: TextStyle(
+                fontSize: 8,
+                fontFamily: 'Roboto',
+                color: primary
+          ),
+          unselectedLabelStyle: TextStyle(
+                fontSize: 8,
+                fontFamily: 'Roboto',
+                color: unselectedColor
+          ),
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_rounded),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.event_available_rounded),
+              label: 'Calender',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.military_tech_rounded),
+              label: 'LeaderBoard',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.face_rounded),
+              label: 'Profile',
+            ),
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal:16),
         child: Column(

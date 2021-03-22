@@ -2,6 +2,7 @@ import 'package:dailyjee/screen/auth/OTPVerify.dart';
 import 'package:dailyjee/screen/auth/logIn.dart';
 import 'package:dailyjee/screen/auth/resetPassword.dart';
 import 'package:dailyjee/screen/auth/signUp.dart';
+import 'package:dailyjee/screen/profile/calender.dart';
 import 'package:dailyjee/screen/profile/grade.dart';
 import 'package:dailyjee/screen/splash.dart';
 import 'package:flutter/material.dart';
